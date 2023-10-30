@@ -29,7 +29,6 @@ module.exports = {
     "base-goerli": {
       url: process.env.NETWORK_HOST_BASE_GOERLI,
       accounts: [process.env.OWNER_PK_ASTERIZM_TEST],
-      gasPrice: 1000000000,
       chainId: 84531,
     },
     linea_testnet: {
@@ -59,13 +58,12 @@ module.exports = {
     },
     linea_mainnet: {
       url: process.env.NETWORK_HOST_LINEA,
-      accounts: [process.env.OWNER_PK_ASTERIZM_TEST],
+      accounts: [process.env.OWNER_PK_ASTERIZM],
       chainId: 59144,
     },
     "base-mainnet": {
       url: process.env.NETWORK_HOST_BASE,
       accounts: [process.env.OWNER_PK_ASTERIZM],
-      gasPrice: 1000000000,
       chainId: 8453,
     },
   },
@@ -87,7 +85,19 @@ module.exports = {
       polygon: process.env.POLYGONSCAN_API_KEY,
       arbitrumOne: process.env.ARBITRUM_API_KEY,
       opera: process.env.FANTOM_API_KEY,
+      linea_mainnet: process.env.LINEA_API_KEY,
+      base: process.env.BASE_API_KEY,
     },
+    customChains: [
+      {
+        network: "linea_mainnet",
+        chainId: 59144,
+        urls: {
+          apiURL: "https://api.lineascan.build/api",
+          browserURL: "https://lineascan.build/",
+        },
+      },
+    ],
   },
   paths: {
     sources: "./contracts",
