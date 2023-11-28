@@ -16,7 +16,7 @@
     "deploy:base": "hardhat run --network base-mainnet scripts/deploy.base.js",
     "test": "hardhat test"
   },
-  "keywords": [],
+  "keywords": [],                                      
   "author": "",
   "license": "ISC",
   "devDependencies": {

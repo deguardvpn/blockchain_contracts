@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "slither": "slither . --solc-remaps '@openzeppelin=node_modules/@openzeppelin @chainlink=node_modules/@chainlink' --exclude naming-convention,external-function,low-level-calls",
     "compile": "hardhat compile",
     "deploy:ethTestnet": "hardhat run --network ethSepolia scripts/deploy.sepolia.js",
     "deploy:bscTestnet": "hardhat run --network bscTestnet scripts/deploy.bsctest.js",
@@ -23,6 +24,7 @@
     "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "@nomicfoundation/hardhat-verify": "^1.1.1",
+    "@nomiclabs/hardhat-solhint": "^3.0.1",
     "dotenv": "^16.3.1",
     "hardhat": "^2.18.0"
   },
