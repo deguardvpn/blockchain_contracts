@@ -75,6 +75,7 @@ contract DeGuardNFTsimplified is
 
     constructor() ERC721("DeGuardPlan", "DGP") {
         rate = Rate(0, block.timestamp);
+        _days = 1 days;
         /// For testing ONLY
         // safeMint(msg.sender, block.timestamp, block.timestamp + 30 days);
     }
