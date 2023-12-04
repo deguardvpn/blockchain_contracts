@@ -67,6 +67,21 @@ module.exports = {
       accounts: [process.env.OWNER_PK_ASTERIZM],
       chainId: 8453,
     },
+    celo: {
+      url: process.env.NETWORK_HOST_CELO,
+      accounts: [process.env.OWNER_PK_ASTERIZM],
+      chainId: 42220,
+    },
+    aurora: {
+      url: process.env.NETWORK_HOST_AURORA,
+      accounts: [process.env.OWNER_PK_ASTERIZM],
+      chainId: 1313161554,
+    },
+    mantle: {
+      url: process.env.NETWORK_HOST_MANTLE,
+      accounts: [process.env.OWNER_PK_ASTERIZM],
+      chainId: 5000,
+    },
   },
   solidity: {
     version: "0.8.19",
@@ -88,6 +103,9 @@ module.exports = {
       opera: process.env.FANTOM_API_KEY,
       linea_mainnet: process.env.LINEA_API_KEY,
       base: process.env.BASE_API_KEY,
+      celo: process.env.CELO_API_KEY,
+      aurora: process.env.AURORA_API_KEY,
+      mantle: process.env.MANTLE_API_KEY,
     },
     customChains: [
       {
