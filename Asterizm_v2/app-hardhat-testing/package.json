@@ -15,6 +15,9 @@
     "deploy:fantom": "hardhat run --network fantom scripts/deploy.fantom.js",
     "deploy:linea": "hardhat run --network linea_mainnet scripts/deploy.linea.js",
     "deploy:base": "hardhat run --network base-mainnet scripts/deploy.base.js",
+    "deploy:mantle": "hardhat run --network mantle scripts/deploy.mantle.js",
+    "deploy:celo": "hardhat run --network celo scripts/deploy.celo.js",
+    "deploy:aurora": "hardhat run --network aurora scripts/deploy.aurora.js",
     "test": "hardhat test"
   },
   "keywords": [],
