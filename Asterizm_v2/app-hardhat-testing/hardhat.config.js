@@ -72,15 +72,15 @@ module.exports = {
       accounts: [process.env.OWNER_PK_ASTERIZM],
       chainId: 42220,
     },
-    aurora: {
-      url: process.env.NETWORK_HOST_AURORA,
-      accounts: [process.env.OWNER_PK_ASTERIZM],
-      chainId: 1313161554,
-    },
     mantle: {
       url: process.env.NETWORK_HOST_MANTLE,
       accounts: [process.env.OWNER_PK_ASTERIZM],
       chainId: 5000,
+    },
+    aurora: {
+      url: process.env.NETWORK_HOST_AURORA,
+      accounts: [process.env.OWNER_PK_ASTERIZM],
+      chainId: 1313161554,
     },
   },
   solidity: {
@@ -105,7 +105,7 @@ module.exports = {
       base: process.env.BASE_API_KEY,
       celo: process.env.CELO_API_KEY,
       aurora: process.env.AURORA_API_KEY,
-      mantle: process.env.MANTLE_API_KEY,
+      mantle: "abc",
     },
     customChains: [
       {
@@ -114,6 +114,22 @@ module.exports = {
         urls: {
           apiURL: "https://api.lineascan.build/api",
           browserURL: "https://lineascan.build/",
+        },
+      },
+      {
+        network: "celo",
+        chainId: 42220,
+        urls: {
+          apiURL: "https://api.celoscan.io/api",
+          browserURL: "https://celoscan.io/",
+        },
+      },
+      {
+        network: "mantle",
+        chainId: 5000,
+        urls: {
+          apiURL: "https://explorer.mantle.xyz/api",
+          browserURL: "https://explorer.mantle.xyz",
         },
       },
     ],
