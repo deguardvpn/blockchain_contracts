@@ -15,7 +15,7 @@ interface IDeGuardNFT is IERC721Enumerable {
     ) external payable;
 }
 
-contract MintAndTransfer is Ownable, ReentrancyGuard, IERC721Receiver {
+contract DeGuardBatcher is Ownable, ReentrancyGuard, IERC721Receiver {
     IDeGuardNFT public nft;
 
     constructor(address _nft) {
