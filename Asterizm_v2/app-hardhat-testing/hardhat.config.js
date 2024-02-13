@@ -37,6 +37,11 @@ module.exports = {
       accounts: [process.env.OWNER_PK_ASTERIZM_TEST],
       chainId: 59140,
     },
+    berachainTestnet: {
+      url: process.env.NETWORK_HOST_BERACHAIN_TESTNET,
+      accounts: [process.env.OWNER_PK_ASTERIZM_TEST],
+      chainId: 80085,
+    },
     bsc: {
       url: process.env.NETWORK_HOST_BSC,
       accounts: [process.env.OWNER_PK_ASTERIZM],
@@ -97,6 +102,7 @@ module.exports = {
       sepolia: process.env.ETHERSCAN_API_KEY,
       bscTestnet: process.env.BSCSCAN_API_KEY,
       polygonMumbai: process.env.POLYGONSCAN_API_KEY,
+      berachainTestnet: process.env.BERACHAINSCAN_API_KEY,
       bsc: process.env.BSCSCAN_API_KEY,
       polygon: process.env.POLYGONSCAN_API_KEY,
       arbitrumOne: process.env.ARBITRUM_API_KEY,
@@ -130,6 +136,15 @@ module.exports = {
         urls: {
           apiURL: "https://explorer.mantle.xyz/api",
           browserURL: "https://explorer.mantle.xyz",
+        },
+      },
+      {
+        network: "berachainTestnet",
+        chainId: 80085,
+        urls: {
+          apiURL:
+            "https://api.routescan.io/v2/network/testnet/evm/80085/etherscan/api/",
+          browserURL: "https://artio.beratrail.io/",
         },
       },
     ],

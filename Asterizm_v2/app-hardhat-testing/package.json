@@ -11,6 +11,8 @@
     "deployBuyGift:ethTestnet": "hardhat run --network ethSepolia scripts/deploy.buygift.sepolia.js",
     "deploy:bscTestnet": "hardhat run --network bscTestnet scripts/deploy.bsctest.js",
     "deploy:polMumbai": "hardhat run --network polygonMumbai scripts/deploy.mumbai.js",
+    "deploy:berachainTestnet": "hardhat run --network berachainTestnet scripts/deploy.berachainTestnet.js",
+    "deployBuyGift:berachainTestnet": "hardhat run --network berachainTestnet scripts/deploy.buygift.berachainTestnet.js",
     "deploy:arbitrum": "hardhat run --network arbitrum scripts/deploy.arbitrum.js",
     "deployBuyGift:arbitrum": "hardhat run --network arbitrum scripts/deploy.buygift.arbitrum.js",
     "deploy:bsc": "hardhat run --network bsc scripts/deploy.bsc.js",
