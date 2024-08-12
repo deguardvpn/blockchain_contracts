@@ -21,10 +21,15 @@ async function main() {
 
   await proxy.waitForDeployment();
 
+
+  
+
   console.log(`DeGuard NFT deployed to ${proxy.target}`);
 }
 
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
+
+
 });

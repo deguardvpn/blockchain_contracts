@@ -15,6 +15,9 @@ describe('Crosschain token', function () {
     const currentChainIds = [1, 2];
     const chainTypes = { EVM: 1, TVM: 2 };
 
+
+
+    //#endregion
     const translator1 = await upgrades.deployProxy(
       Transalor,
       [currentChainIds[0], chainTypes.EVM],
